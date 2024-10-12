@@ -24,34 +24,42 @@
         </a>
         <nav class="tool bar">
             <ul class="navigation">
-                <li><a href="index.html">ABOUT</a></li>
-                <li><a href="menus.html">MENUS</a></li>
-                <li><a href="reservation.html">RESERVATION</a></li>
+                <li><a href="index.html" class="bold-txt">ABOUT</a></li>
+                <li><a href="menus.html" class="bold-txt">MENUS</a></li>
+                <li><a href="reservation.html" class="bold-txt">RESERVATION</a></li>
             </ul>
-            <button class="pop-up bottom">FEEDBACK</button>
+            <button class="pop-up bottom" class="bold-txt">FEEDBACK</button>
         </nav>
     </header>
     <main> 
         <div class="container">
-            <h2>Reservation</h2>
-            <form>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
-        
-                <label for="time">Time:</label>
-                <input type="time" id="time" name="time" step="300" min="10:00" max="23:00" required>
-        
-                <label for="people">Number of People:</label>
-                <input type="number" id="people" name="people" min="1" max="10" required>
-        
-                <label for="name">Your First and Last Name:</label>
-                <input type="text" id="name" name="name" placeholder="Lucas Martin" required>
-        
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="+38 (0XX) XXX-XX-XX" required>
-        
-                <input type="submit" value="Confirm Reservation">
-            </form>
+            <div class="col-7">
+                <h2>RESERVATION</h2>
+                <form>
+                    <h3>FIND A TABLE</h3>
+                    <label for="date">DATE</label>
+                    <input type="date" id="date" name="date" required>
+            
+                    <label for="time">TIME</label>
+                    <input type="time" id="time" name="time" step="300" min="10:00" max="23:00" required>
+            
+                    <label for="people">NUMBER OF PEOPLE</label>
+                    <input type="number" id="people" name="people" min="1" max="15" required>
+    
+                    <h3>YOUR DETAILS</h3>
+                    <label for="name">YOUR FIRST AND LAST NAME</label>
+                    <input type="text" id="name" name="name" placeholder="Your first and last name" required>
+            
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+38 (0XX) XXX-XX-XX" required>
+            
+                    <input type="submit" value="Confirm Reservation">
+                </form>
+            </div>
+            <div class="col-5">
+                <img src="public/images/logo-text.svg" alt="Logo Text">
+                <img src="public/images/logo-icon-without-background.svg" alt="Logo Icon">
+            </div>
         </div>        
     </main>
     <footer>
