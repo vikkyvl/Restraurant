@@ -1,0 +1,100 @@
+@import "https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 0 60px;
+}
+
+.hidden, .mobile {
+  display: none;
+}
+
+header body {
+  color: #2f2e2c;
+  background-color: #e2ded2;
+  font-family: Arial, sans-serif;
+}
+
+header .contact-info {
+  background-color: #c9bca9;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+header .contact-info p {
+  align-items: center;
+  margin: 0;
+  display: flex;
+}
+
+header .contact-info p a {
+  color: #2f2e2c;
+  align-items: center;
+  margin-right: 15px;
+  text-decoration: none;
+  display: flex;
+}
+
+header .contact-info p a svg {
+  margin-right: 8px;
+}
+
+header .contact-info p a:hover {
+  text-decoration: underline;
+}
+
+header .logo {
+  margin: 20px 0;
+}
+
+header .logo img {
+  width: 100%;
+  max-width: 200px;
+}
+
+header .tool-bar {
+  background-color: #875f45;
+  padding: 15px;
+}
+
+header .tool-bar .navigation {
+  justify-content: space-around;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+header .tool-bar .navigation li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header .tool-bar .navigation li a:hover {
+  text-decoration: underline;
+}
+
+header .tool-bar .pop-up {
+  color: #fff;
+  cursor: pointer;
+  background-color: #2f2e2c;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+header .tool-bar .pop-up:hover {
+  background-color: #151413;
+}
+/*# sourceMappingURL=index.b10d73a7.css.map */

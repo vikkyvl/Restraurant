@@ -1,0 +1,32 @@
+@use 'vars' as *;
+@use 'fonts' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 0 60px;
+}
+
+.hidden {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+header {
+    display: flex;
+    
+}

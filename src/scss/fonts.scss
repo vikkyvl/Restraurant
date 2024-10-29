@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+  @mixin font($name, $weight, $variation-settings: null) {
+    font-family: $name, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    font-style: normal;
+  
+    @if $variation-settings {
+      font-variation-settings: $variation-settings;
+    }
+  }
