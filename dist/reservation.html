@@ -20,38 +20,40 @@
                 <path d="M18.5 8.75V18.5L25 21.75M34.75 18.5C34.75 27.4746 27.4746 34.75 18.5 34.75C9.52537 34.75 2.25 27.4746 2.25 18.5C2.25 9.52537 9.52537 2.25 18.5 2.25C27.4746 2.25 34.75 9.52537 34.75 18.5Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg> 10:00 - 23:00</p>
         </div>
-        <a class="logo" href="/index.html">
-            <img src="/logo.3a7a154c.svg" alt="Old Town">
-        </a>
-        <nav class="tool bar">
-            <ul class="navigation">
-                <li><a href="/index.html" class="bold-txt">ABOUT</a></li>
-                <li><a href="/menus.html" class="bold-txt">MENUS</a></li>
-                <li><a href="/reservation.html" class="bold-txt">RESERVATION</a></li>
-            </ul>
-            <button class="pop-up bottom">FEEDBACK</button>
-        </nav>
+        <div class="bottom-row">
+            <a class="logo" href="/index.html">
+                <img src="/logo.3a7a154c.svg" alt="Old Town">
+            </a>
+            <nav class="tool-bar">
+                <ul class="navigation">
+                    <li><a href="/index.html" class="bold-txt">ABOUT</a></li>
+                    <li><a href="/menus.html" class="bold-txt">MENUS</a></li>
+                    <li><a href="/reservation.html" class="bold-txt">RESERVATION</a></li>
+                </ul>
+                <button class="pop-up bottom">FEEDBACK</button>
+            </nav>
+        </div>
     </header>
     <main> 
         <div class="container">
             <div class="col-7">
-                <h2>RESERVATION</h2>
+                <h2 class="bold-txt">RESERVATION</h2>
                 <form>
-                    <h3>FIND A TABLE</h3>
-                    <label for="date">DATE</label>
+                    <h3 class="bold-txt">FIND A TABLE</h3>
+                    <label for="date" class="bold-txt">DATE</label>
                     <input type="date" id="date" name="date" required="">
             
-                    <label for="time">TIME</label>
+                    <label for="time" class="bold-txt">TIME</label>
                     <input type="time" id="time" name="time" step="300" min="10:00" max="23:00" required="">
             
-                    <label for="people">NUMBER OF PEOPLE</label>
+                    <label for="people" class="bold-txt">NUMBER OF PEOPLE</label>
                     <input type="number" id="people" name="people" min="1" max="15" required="">
     
-                    <h3>YOUR DETAILS</h3>
-                    <label for="name">YOUR FIRST AND LAST NAME</label>
+                    <h3 class="bold-txt">YOUR DETAILS</h3>
+                    <label for="name" class="bold-txt">YOUR FIRST AND LAST NAME</label>
                     <input type="text" id="name" name="name" placeholder="Your first and last name" required="">
             
-                    <label for="phone">PHONE NUMBER</label>
+                    <label for="phone" class="bold-txt">PHONE NUMBER</label>
                     <input type="tel" id="phone" name="phone" placeholder="+38 (0XX) XXX-XX-XX" required="">
             
                     <input type="submit" value="Confirm Reservation">

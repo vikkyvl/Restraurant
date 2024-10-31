@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    @include font("Urbanist", 700);
 }
 
 a {
@@ -26,7 +27,172 @@ section {
     display: none;
 }
 
+button.pop-up.bottom {
+    font-size: 19px;
+    position: fixed;             // Фіксує кнопку на екрані
+    right: 0;                    // Притискає до правого краю
+    top: 50%;                    // Розташовує кнопку посередині по вертикалі
+    transform: translateY(-50%); // Центрує по вертикалі
+    padding: 29px 13px 30px 13px;          // Внутрішні відступи
+    background-color: $warm-medium-brown;   // Змінити на колір кнопки з дизайну
+    color: $white-sand;                // Колір тексту
+    border: none;                // Відсутність рамки
+    border-top-left-radius: 22.53px; // Закруглення лівого верхнього кута
+    border-bottom-left-radius: 22.53px; // Закруглення лівого нижнього кута
+    cursor: pointer;             // Вказівник курсора
+    writing-mode: vertical-rl;   // Розташування тексту вертикально
+    text-orientation: mixed;     // Орієнтація тексту вертикально
+    z-index: 1000;               // Перекриття інших елементів
+    letter-spacing: 1px;         // Розрив між літерами
+    height: 178px;                
+    width: 55.88px; 
+
+    &:hover {
+        background-color: #6B4429;
+        color: $white;
+    }
+}
+
 header {
     display: flex;
+    flex-direction: column; 
+    align-items: center;
+
+    .contact-info {
+        background-color: $silver-pink;
+        text-align: center; 
+        justify-content: center;
+        font-size: 14px; 
+        padding: 9px 0px 10px 0px;
+        width: 100%;
     
+        p {
+            color: $dark-charcoal-gray;
+        }
+    
+        a {
+            color: inherit;
+            margin: 0 17px;
+        }
+    
+        svg {
+            width: 1em; 
+            height: 1em;
+            color: $dark-charcoal-gray;
+        }
+    }
+
+    .bottom-row {
+        background-color: $warm-medium-brown;
+        display: flex;
+        justify-content: space-between; 
+        box-shadow: 0 20px 30px rgba(226, 222, 210, 0.5);
+        width: 100%;
+
+        .logo {
+            padding: 15px 64px 12px;
+            display: flex;
+            justify-content: flex-start;
+            width: auto;
+            height: 60px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        nav.tool-bar {
+            padding: 0 60px;
+            display: flex;
+            justify-content: center;
+            
+            ul {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    padding-top: 35px;
+                    margin-right: 42px; 
+                    font-size: 19px;
+                    
+                    a {
+                        color: $white-sand;
+                        border-bottom: 1px solid $white-sand;
+                        padding: 10px;
+
+                        &:hover {
+                            color: $white; 
+                            box-shadow: 0 1px 0 $white;
+                        }
+                    }
+
+                    &:last-child{
+                        a {
+                            border: 3px solid $white-sand;
+                            border-radius: 3px;
+                            padding: 18px 48px;
+
+                            &:hover {
+                                background-color: $white-sand; 
+                                color: $warm-medium-brown; 
+                                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}  
+
+section.restraurant-banner.row {
+    background-image: url('/src/public/images/main/banner.svg'); 
+    background-size: cover;
+    background-position: center;
+    padding-top: 105px;
 }
+
+footer {
+    background-color: $dark-charcoal-gray;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+
+    .footer.row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 60px;
+        width: 100%;
+
+        .social.links {
+            display: flex;
+            gap: 15px;
+
+            a.link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                background-color: $silver-pink; 
+                border-radius: 50%; 
+                text-decoration: none;
+
+                svg {
+                    width: auto; 
+                    height: 30px;
+                    color: $dark-charcoal-gray;
+                }
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.9);
+                }
+            }
+        }
+    }
+}  
+
