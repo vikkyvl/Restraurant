@@ -1,0 +1,48 @@
+footer {
+    margin-top: auto;
+    background-color: $dark-charcoal-gray;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+
+    .footer.row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 60px;
+        width: 100%;
+
+        .social.links {
+            display: flex;
+            gap: 15px;
+
+            a.link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                background-color: $silver-pink; 
+                border-radius: 50%; 
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+
+                svg {
+                    width: auto; 
+                    height: 30px;
+                    color: $dark-charcoal-gray;
+                }
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.9);
+                }
+            }
+        }
+
+        .logo-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%); 
+        }
+    }
+}  
