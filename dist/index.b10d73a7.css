@@ -1,5 +1,5 @@
-@import "https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=MonteCarlo&family=Urbanist:wght@700&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@600&family=MonteCarlo&family=Urbanist:wght@700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=MonteCarlo&family=Urbanist:wght@700&display=swap";
 header {
   flex-direction: column;
   align-items: center;
@@ -186,7 +186,9 @@ section.menus.banner {
   gap: 50px;
   height: 600px;
   padding-top: 105px;
+  animation: 1.5s forwards slideInDown;
   display: flex;
+  box-shadow: 0 10px 20px #00000080;
 }
 
 section.menus.banner h1 {
@@ -194,6 +196,163 @@ section.menus.banner h1 {
   letter-spacing: 10px;
   margin: 0;
   font-size: 96px;
+  animation: 1s forwards slideInDown;
+}
+
+section.main-menus {
+  justify-content: center;
+  padding: 42px;
+  display: flex;
+}
+
+section.main-menus nav {
+  gap: 10px;
+  display: inline-flex;
+}
+
+section.main-menus nav ul {
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+section.main-menus nav ul li {
+  flex: 30%;
+}
+
+section.main-menus nav ul li a {
+  color: #875f45;
+  text-align: center;
+  background-color: #e2ded2;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: background-color .3s, color .3s;
+  display: block;
+}
+
+section.main-menus nav ul li a:hover {
+  color: #e2ded2;
+  background-color: #875f45;
+}
+
+section.menus.button.selection {
+  justify-content: center;
+  padding: 42px;
+  display: flex;
+}
+
+section.menus.button.selection nav {
+  gap: 10px;
+  display: inline-flex;
+}
+
+section.menus.button.selection nav ul {
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+section.menus.button.selection nav ul li {
+  flex: 150px;
+}
+
+section.menus.button.selection nav ul li a {
+  color: #875f45;
+  text-align: center;
+  background-color: #e2ded2;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: background-color .3s, color .3s;
+  display: flex;
+}
+
+section.menus.button.selection nav ul li a:hover {
+  color: #e2ded2;
+  background-color: #875f45;
+}
+
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  background-color: #e2ded2;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+.container .col-7 {
+  padding: 0 60px;
+}
+
+.container .col-5 {
+  text-align: center;
+  background: linear-gradient(#00000080, #00000080), url("reservation.47f28019.svg") center / cover no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 558px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 10px;
+  animation: .5s ease-in-out slideInDown;
+  display: flex;
+}
+
+.container .col-5 h1 {
+  font-optical-sizing: auto;
+  color: #fff;
+  white-space: nowrap;
+  margin: 0;
+  font-family: MonteCarlo, sans-serif;
+  font-size: clamp(24px, 8vw, 128px);
+  font-style: normal;
+  font-weight: 400;
+  animation: .5s ease-in-out slideInDown;
+  position: relative;
+}
+
+.container .col-5 h1:after {
+  content: "";
+  z-index: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.container .col-5 img {
+  object-fit: contain;
+  width: 351px;
+  height: auto;
+  margin-top: 20px;
+  animation: .5s ease-in-out slideInDown;
 }
 
 * {
@@ -281,6 +440,7 @@ section.restraurant-banner.row {
   align-items: center;
   height: 600px;
   padding-top: 105px;
+  animation: 1s forwards slideInDown;
   display: flex;
   position: relative;
 }
@@ -312,6 +472,7 @@ section.restraurant-banner.row .image h1 {
   color: #e2ded2;
   margin-bottom: 40px;
   font-size: 64px;
+  animation: 1.2s forwards slideInDown;
 }
 
 section.restraurant-banner.row .information {

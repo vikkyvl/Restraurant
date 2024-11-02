@@ -3,6 +3,8 @@
 @import 'header';
 @import 'footer';
 @import 'menus';
+@import 'animations';
+@import 'reservation';
 
 * {
     margin: 0;
@@ -88,6 +90,7 @@ section.restraurant-banner.row {
     background-position: center;
     padding-top: 105px;
     position: relative; 
+    animation: slideInDown 1s ease forwards; 
 
     .overlay {
         width: 1033px;
@@ -114,6 +117,7 @@ section.restraurant-banner.row {
             margin-bottom: 40px; 
             font-size: 64px;
             color: $white-sand;
+            animation: slideInDown 1.2s ease forwards; 
         }
     }
     
