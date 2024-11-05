@@ -42,6 +42,10 @@ ul {
 
 section {
     padding: 0 60px;
+
+    @media (max-width: 768px) {
+        padding: 0 30px; 
+    }
 }
 
 .hidden {
@@ -49,8 +53,13 @@ section {
 }
 
 .mobile {
-    display: none;
-} 
+    display: none !important; 
+
+    @media (max-width: 768px) {
+        display: block !important; 
+    }
+}
+
 
 button.pop-up.bottom {
     font-size: 19px;
@@ -237,5 +246,11 @@ section.guest.favorites.colums {
         &:not(:last-child)::after {
             display: block;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 0 30px;
     }
 }

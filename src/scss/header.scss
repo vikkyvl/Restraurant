@@ -124,4 +124,46 @@ header {
             }
         } 
     }
-} 
+    
+    @media (max-width: 768px) {
+        .contact-info {
+            display: none;
+        }
+    
+        .bottom-row {
+            padding: 0 30px; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            height: 80px; 
+    
+            nav.tool-bar {
+                display: none;
+            }
+    
+            .logo {
+                width: auto;
+                height: 40px; 
+                display: flex;
+                padding: 0;
+            }
+    
+            .mobile.tool-bar {
+                display: flex;
+                width: 45px;
+                height: 45px;
+                flex-direction: column;
+                
+                span {
+                    display: block;
+                    background-color: $white-sand;
+                    border-radius: 2px;
+                    width: 100%;
+                    margin: 7px 0;
+                    height: 5px;
+                }
+            }
+        }
+    }       
+}  

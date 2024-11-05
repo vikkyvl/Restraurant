@@ -1,7 +1,7 @@
 @import 'mixin';
 
 section.menus.banner{
-    height: 600px; 
+    width: auto;
     padding-top: 105px;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
@@ -26,7 +26,7 @@ section.menus.banner{
     }
 
     animation: slideInDown 1.5s ease forwards;
-}
+}  
 
 section.main-menus {
     display: flex;
@@ -147,16 +147,16 @@ section.menus.button.selection {
     }
 } 
 
-.menu-item{
+.menu-item {
     margin-bottom: 20px;
 
-    h3{
+    h3 {
         font-size: 25px;
         color: $dark-charcoal-gray;
         margin-bottom: 17px;
     }
 
-    p{
+    p {
         font-size: 16px;
         color: $melted-chocolate;
     }
@@ -165,13 +165,16 @@ section.menus.button.selection {
         font-size: 20px;
         color: #FFFFFF; 
         background-color: $warm-medium-brown; 
-        width: 90px; 
-        height: 35px; 
+        padding: 5px 15px;
+        min-width: 90px; 
+        max-width: 100px; 
+        height: 35px;
         border-radius: 20px; 
         display: flex;
         align-items: center; 
         justify-content: center; 
         box-sizing: border-box; 
+        white-space: nowrap; 
     } 
 }
 
@@ -179,9 +182,10 @@ section.menus.button.selection {
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    gap: 30px;
 }
 
-section.breakfast.menu { 
+section.menu.breakfast { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -194,10 +198,9 @@ section.breakfast.menu {
         box-sizing: border-box;
         @include with-line;
     }
-
 }
 
-section.lunch.menu {
+section.menu.lunch {
     display: flex;
     gap: 20px;
     margin-bottom: 28px;
@@ -219,7 +222,7 @@ section.lunch.menu {
     }
 }
 
-section.dinner.menu {
+section.menu.dinner {
     display: flex;
     gap: 20px;
     margin-bottom: 28px;
@@ -233,21 +236,20 @@ section.dinner.menu {
     }
 }
 
-section.dessert.menu {
+section.menu.dessert {
     display: flex;
-    justify-content: center;
-    text-align: left;
+    justify-content: center;  
     margin-bottom: 28px;
 
     .col {
-        max-width: 500px;
-        width: 100%;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
+        box-sizing: border-box;
+        margin: 10px;
+        padding: 15px;
+        @include with-line;
     }
 }
 
-section.drinks.menu {
+section.menu.drinks {
     margin-bottom: 28px;
 
     .row {
@@ -273,5 +275,56 @@ section.drinks.menu {
             box-sizing: border-box;
             @include with-line;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    section.menus.banner {  
+        padding-bottom: 105px;
+        img {
+            display: none; 
+        }
+
+        h1 {
+            font-size: 40px; 
+        }
+    }
+
+    section.main-menus{
+        nav{
+            ul{
+                li{
+                    flex: 1 1 100%;
+                }
+            }
+        }
+    }
+
+    section.menus.button.selection{
+        padding: 30px;
+        nav {
+            display: flex;
+            flex-wrap: wrap;  
+            gap: 10px;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                li {
+                    flex: 1 1 calc(50% - 10px);  
+                    
+                    a {
+                        width: 100%;  
+                    }
+                }
+            }
+        }
+    }
+    
+    section.menu{
+        flex-direction: column; 
+        flex: 1 1 100%; 
     }
 }
